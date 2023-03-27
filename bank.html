@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Bank</title>
+</head>
+<body class="m-7 bg-gray-700">
+    <header class="flex justify-center">
+        <div class="bg-gray-500 w-3/4 p-8 rounded">
+            <h1 class="lg:text-5xl sm:text-xl md:text-xl text-center">Welcome to my <span class="font-bold text-pink-500">Bank</span></h1>
+        </div>
+    </header>
+    <main class="my-4">
+        <!-- status section -->
+        <section class="grid grid-cols-3 gap-3 w-9/12 mx-auto">
+            <div class="bg-green-500 rounded-md p-2 py-4">
+                <h1 class="text-center mb-6 text-3xl text-white font-semibold">Deposit</h1>
+                <h2 class="text-center text-3xl text-white font-semibold">$<span id="total-deposit">00</span></h2>
+            </div>
+            
+            <div class="bg-pink-500 rounded-md p-2 py-4">
+                <h1 class="text-center mb-6 text-3xl text-white font-semibold">Withdraw</h1>
+                <h2 class="text-center text-3xl text-white font-semibold">$<span id="total-withdraw">00</span></h2>
+            </div>
+
+            <div class="bg-blue-500 rounded-md p-2 py-4">
+                <h1 class="text-center mb-6 text-3xl text-white font-semibold">Available Balance</h1>
+                <h2 class="text-center text-3xl text-white font-semibold">$<span id="total-available">00</span></h2>
+            </div>
+        </section>
+
+        <!-- deposti and withdraw section -->
+        <section class="grid grid-cols-2 gap-3 w-9/12 mx-auto my-4">
+            <div class="bg-purple-500 rounded-md p-2 py-4">
+                <h1 class="text-center mb-6 text-3xl text-white font-semibold">Enter Deposit Amount</h1>
+                <input class="p-3 w-full rounded-lg" type="text" name="" id="deposti-input">
+                <button class="p-3 bg-gray-300 w-full rounded-lg my-4" id="deposit-btn" >Deposit</button>
+            </div>
+            
+            <div class="bg-orange-500 rounded-md p-2 py-4">
+                <h1 class="text-center mb-6 text-3xl text-white font-semibold">Enter Withdraw Amount</h1>
+                <input class="p-3 w-full rounded-lg" type="text" name="" id="withdraw-input">
+                <button class="p-3 bg-gray-300 w-full rounded-lg my-4" id="withdraw-btn">Withdraw</button>
+            </div>
+        </section>
+    </main>
+
+    <script>
+
+    </script>
+    <script src="/transection.js"></script>
+</body>
+</html>
